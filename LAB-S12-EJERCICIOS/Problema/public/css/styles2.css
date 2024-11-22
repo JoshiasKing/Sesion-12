@@ -1,0 +1,87 @@
+body, h3, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-image: url('/img/ventas.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+.conteiner {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+h3 {
+    text-align: center;
+    font-weight: 700;
+    color: #5e35b1;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #5e35b1;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #4527a0;
+    text-decoration: none;
+}
+.p-3 {
+    padding: 20px;
+    border: 1px solid #d1c4e9;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .conteiner {
+        padding: 15px;
+    }
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
